@@ -39,3 +39,13 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("Universal", 4483362458) -- Title, Image
 local Tab = Window:CreateTab("Dead Rails", 4483362458)-- Titl
+local Divider = Tab:CreateDivider()
+local Toggle = Tab:CreateToggle({
+   Name = "Autobond",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
