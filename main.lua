@@ -38,6 +38,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Universal", 4483362458) -- Title, Image
+local Divider = Tab:CreateDivider()
 local Tab = Window:CreateTab("Dead Rails", 4483362458)-- Titl
 local Divider = Tab:CreateDivider()
 local Toggle = Tab:CreateToggle({
